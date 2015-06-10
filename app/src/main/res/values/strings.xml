@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PhoneNumbersGenerator</string>
+
+    <!--actionBar strings-->
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+
+    <!--views strings-->
+    <string name="quantity_phoneNumbers_hint">Number of Phone Numbers ie 30000</string>
+    <string name="generate_String">Generate</string>
+
+    <!--colors here-->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#FB8C00</color>
+    <color name="actionBarTitleColor">#795548</color>
+    <color name="globalBodyBgColor">#EEEEEE</color>
+
+</resources>
