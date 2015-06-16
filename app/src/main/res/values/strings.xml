@@ -14,5 +14,6 @@
     <color name="colorPrimaryDark">#FB8C00</color>
     <color name="actionBarTitleColor">#795548</color>
     <color name="globalBodyBgColor">#EEEEEE</color>
+    <color name="listItemcolor">#FFF3E0</color>
 
 </resources>

@@ -12,18 +12,16 @@
 
     <Spinner android:id="@+id/countriesSpinner"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content"
+        />
 
     <Spinner android:id="@+id/precedingDigitsSpinner"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content"/>
 
     <EditText android:id="@+id/quantityOfNumbers"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:hint="@string/quantity_phoneNumbers_hint"
         android:inputType="number"/>
 
@@ -32,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/generate_String"
+        android:padding="23dp"
         />
 
 

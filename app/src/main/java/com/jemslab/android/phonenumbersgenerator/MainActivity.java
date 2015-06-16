@@ -4,13 +4,36 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        /*setContentView(R.layout.activity_main); */
+        setContentView(R.layout.phones_listings);
+        randomGenerator();
+    }
+
+    private void randomGenerator() {
+        String phoneNumber="jefflilcot";
+        String country = "kenya";
+        ArrayList<Phones> phonesArray = new ArrayList<>();
+        int i= 0;
+
+        while(i < 1000) phonesArray.add(new Phones(phoneNumber + i++, country));
+
+        PhonesListAdapter adapter = new PhonesListAdapter(this,phonesArray);
+        ListView myListView = (ListView) findViewById(R.id.phoneListingView);
+        myListView.setAdapter(adapter);
+
     }
 
     @Override
