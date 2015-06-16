@@ -17,12 +17,14 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*setContentView(R.layout.activity_main); */
-        setContentView(R.layout.phones_listings);
-        randomGenerator();
+        setContentView(R.layout.fragment_container);
+       // randomGenerator();
     }
 
     private void randomGenerator() {
+
+        //this code to go to the fragment since it acts as an activity
+        //in the fragment inflate the phone_listings.xml
         String phoneNumber="jefflilcot";
         String country = "kenya";
         ArrayList<Phones> phonesArray = new ArrayList<>();
