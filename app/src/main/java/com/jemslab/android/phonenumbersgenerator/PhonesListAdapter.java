@@ -30,8 +30,6 @@ public class PhonesListAdapter extends ArrayAdapter<Phones> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        /**get the current item**/
-        Phones phone = getItem(position);
 
         /**check if the view(layout in my case containing the custom views for the list view)
          *  is being reused otherwise inflate it**/
@@ -50,13 +48,12 @@ public class PhonesListAdapter extends ArrayAdapter<Phones> {
             viewholder = (ViewHolder) convertView.getTag();
         }
 
-        /**views that are gonna contain data ie for data population from the java object**/
-        /*TextView vPhoneNumber = (TextView) convertView.findViewById(R.id.contactsPhoneNumber);
-        TextView vCountry = (TextView) convertView.findViewById(R.id.contactCountry); */
 
         /****/
-        viewholder.phoneNumber.setText(phone.phoneNumber);
-        viewholder.country.setText(phone.country);
+        /**get the current item**/
+        Phones phone = getItem(position);
+        viewholder.phoneNumber.setText(phone.getPhoneNumber());
+        viewholder.country.setText(phone.getCountry());
 
         return convertView;
     }

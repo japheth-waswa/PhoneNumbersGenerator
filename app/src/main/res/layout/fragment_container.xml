@@ -4,15 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--
 <FrameLayout
-    android:id="@+id/phoneListFragContainer"
+    android:id="@+id/phonesFragContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
--->
-    <fragment class="com.jemslab.android.phonenumbersgenerator.PhonesListFragment"
+<!--    <fragment class="com.jemslab.android.phonenumbersgenerator.PhonesListFragment"
         android:id="@+id/phonesListFrag"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"/>-->
 
 </LinearLayout>
